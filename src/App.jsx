@@ -100,9 +100,10 @@ const App = () => {
         </div>
       ) : (
         <div className="shopping-cart">
-          
+          <div className="wlc">
           <h2>Welcome, {JSON.parse(localStorage.getItem("loggedInUser")).name}!</h2>
           <h3>Available Accessories</h3>
+          </div>
           <div className="items">
             {accessories.map((item) => (
               <div key={item.id} className="item">
